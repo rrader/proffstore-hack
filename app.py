@@ -1,0 +1,10 @@
+import RPi.GPIO as GPIO
+
+GREEN = 20
+YELLOW = 26
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(GREEN, GPIO.OUT)
+GPIO.setup(YELLOW, GPIO.OUT)
+
+GPIO.output(YELLOW, True)
